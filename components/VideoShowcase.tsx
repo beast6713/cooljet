@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { getAssetUrl } from "../data/assetHelper";
 
 interface VideoShowcaseProps {
   defaultVideoSrc?: string;
@@ -11,7 +12,7 @@ export function VideoShowcase({ defaultVideoSrc = "/cooljet_demo.mp4" }: VideoSh
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(true);
   const [hasCustomVideo, setHasCustomVideo] = useState(true);
-  const [videoSrc, setVideoSrc] = useState(defaultVideoSrc);
+  const [videoSrc, setVideoSrc] = useState(getAssetUrl(defaultVideoSrc));
   const [videoError, setVideoError] = useState(false);
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [showCenterPlayHint, setShowCenterPlayHint] = useState(false);

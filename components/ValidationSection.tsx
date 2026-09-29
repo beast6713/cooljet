@@ -1,5 +1,7 @@
 "use client";
 
+import { getAssetUrl } from "../data/assetHelper";
+
 export function ValidationSection() {
   const validationMilestones = [
     {
@@ -119,7 +121,7 @@ export function ValidationSection() {
             <div className="evidence-item">
               <div className="evidence-img-frame">
                 <img
-                  src="/ppt/technology_in_action_diagram.png"
+                  src={getAssetUrl("/ppt/technology_in_action_diagram.png")}
                   alt="Technology in Action Aerodynamic Sequence Diagram from Slide 5"
                   className="evidence-img"
                   loading="lazy"
@@ -134,7 +136,7 @@ export function ValidationSection() {
             <div className="evidence-item">
               <div className="evidence-img-frame">
                 <img
-                  src="/ppt/project_budget_split_table.png"
+                  src={getAssetUrl("/ppt/project_budget_split_table.png")}
                   alt="Project Budget Split-up table from Slide 11"
                   className="evidence-img"
                   loading="lazy"

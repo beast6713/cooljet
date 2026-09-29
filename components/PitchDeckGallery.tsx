@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { getAssetUrl } from "../data/assetHelper";
 
 interface DeckPhoto {
   id: string;
@@ -20,7 +21,7 @@ const DECK_PHOTOS: DeckPhoto[] = [
     title: "Indoor Unit System & Blower Assembly",
     slideNumber: 3,
     category: "engineering",
-    src: "/ppt/cooljet_indoor_unit_system.png",
+    src: getAssetUrl("/ppt/cooljet_indoor_unit_system.png"),
     caption: "Slide 3 · Indoor Unit Architecture",
     highlightBadge: "CORE ARCHITECTURE",
     description: "Cutaway engineering rendering of the indoor unit showcasing the motive blower fan and multi-stage convergent-divergent nozzle array.",
@@ -30,7 +31,7 @@ const DECK_PHOTOS: DeckPhoto[] = [
     title: "3D CAD Views of C-D Nozzle (Fig 5.1 & 5.2)",
     slideNumber: 3,
     category: "engineering",
-    src: "/ppt/cd_nozzle_3d_design_fig5.png",
+    src: getAssetUrl("/ppt/cd_nozzle_3d_design_fig5.png"),
     caption: "Slide 3 · Fig 5.1 & 5.2 3D Model",
     highlightBadge: "CAD 3D MODEL",
     description: "Front-side and rear-side isometric 3D views of the de Laval C-D nozzle contoured expansion channel.",
@@ -40,7 +41,7 @@ const DECK_PHOTOS: DeckPhoto[] = [
     title: "C-D Nozzle Dimension Blueprint (Fig 5.3)",
     slideNumber: 3,
     category: "engineering",
-    src: "/ppt/cd_nozzle_engineering_dimensions_fig5_3.png",
+    src: getAssetUrl("/ppt/cd_nozzle_engineering_dimensions_fig5_3.png"),
     caption: "Slide 3 · Fig 5.3 Engineering Blueprint",
     highlightBadge: "SPECIFICATION BLUEPRINT",
     description: "Precision manufacturing CAD blueprint documenting exact radii (R49.5, R51, R32, R7.5) and cross-sectional contraction throat dimensions.",
@@ -50,7 +51,7 @@ const DECK_PHOTOS: DeckPhoto[] = [
     title: "Technology in Action Aerodynamic Sequence",
     slideNumber: 5,
     category: "technology",
-    src: "/ppt/technology_in_action_diagram.png",
+    src: getAssetUrl("/ppt/technology_in_action_diagram.png"),
     caption: "Slide 5 · Technology In Action Flow",
     highlightBadge: "TRL 5 VALIDATED DYNAMICS",
     description: "Documented fluid mechanics sequence: Ambient Air In → Convergent Compression → Throat (Low Pressure / Temp Drop) → Divergent Expansion → Cooled Air Out.",
@@ -60,7 +61,7 @@ const DECK_PHOTOS: DeckPhoto[] = [
     title: "Market Opportunity & Industry Projections",
     slideNumber: 4,
     category: "market",
-    src: "/ppt/market_opportunity_charts.png",
+    src: getAssetUrl("/ppt/market_opportunity_charts.png"),
     caption: "Slide 4 · Market At A Glance",
     highlightBadge: "USD 257.8B MARKET",
     description: "Global AC market expanding to $257.8B by 2030 (CAGR 7.5%) with India growing to $14.5B (CAGR 6.6%), accelerated by refrigerant phase-down mandates.",
@@ -70,7 +71,7 @@ const DECK_PHOTOS: DeckPhoto[] = [
     title: "3-Year Financial Outlook & Projections",
     slideNumber: 10,
     category: "business",
-    src: "/ppt/financial_3year_projections.png",
+    src: getAssetUrl("/ppt/financial_3year_projections.png"),
     caption: "Slide 10 · 3-Year Projections",
     highlightBadge: "FINANCIAL MODEL",
     description: "3-year financial model tracking product sales and AMC revenues scaling from ₹90L (Year 1) to ₹6.30 Cr (Year 3) with 32% EBITDA margin.",
@@ -80,7 +81,7 @@ const DECK_PHOTOS: DeckPhoto[] = [
     title: "Pre-Seed Allocation & Use of Funds",
     slideNumber: 10,
     category: "business",
-    src: "/ppt/use_of_funds_breakdown.png",
+    src: getAssetUrl("/ppt/use_of_funds_breakdown.png"),
     caption: "Slide 10 · ₹75,00,000 Pre-Seed Round",
     highlightBadge: "CAPITAL ALLOCATION",
     description: "Use of funds: R&D & Product Dev (30%), Prototyping (25%), Marketing (20%), Team (15%), Contingency (10%).",
@@ -90,7 +91,7 @@ const DECK_PHOTOS: DeckPhoto[] = [
     title: "Institutional Project Budget Split & IVP Support",
     slideNumber: 11,
     category: "business",
-    src: "/ppt/project_budget_split_table.png",
+    src: getAssetUrl("/ppt/project_budget_split_table.png"),
     caption: "Slide 11 · SRM Institute of Science & Technology",
     highlightBadge: "KNOWLEDGE PARTNER: SRM",
     description: "Official milestone budget table documenting ₹3,25,000 project breakdown with ₹3,00,000 IVP contribution under SRM Institute of Science & Technology.",
@@ -100,7 +101,7 @@ const DECK_PHOTOS: DeckPhoto[] = [
     title: "CoolJet Startup Pitch Deck Title & Institution",
     slideNumber: 1,
     category: "overview",
-    src: "/ppt/cooljet_srm_brand_header.png",
+    src: getAssetUrl("/ppt/cooljet_srm_brand_header.png"),
     caption: "Slide 1 · Presenter: Rudra Shekhar Dubey",
     highlightBadge: "OFFICIAL PRESENTATION",
     description: "Official startup deck presented at SRM Institute of Science & Technology by Rudra Shekhar Dubey.",
@@ -109,7 +110,7 @@ const DECK_PHOTOS: DeckPhoto[] = [
 
 const FULL_SLIDES = Array.from({ length: 11 }, (_, i) => ({
   number: i + 1,
-  src: `/ppt/slide_${i + 1}.png`,
+  src: getAssetUrl(`/ppt/slide_${i + 1}.png`),
   title: [
     "Cover: Startup Pitch Deck",
     "Problem Statement",
@@ -162,7 +163,7 @@ export function PitchDeckGallery() {
 
             <div className="deck-actions-header">
               <a
-                href="/ppt/cooljet_pitch_deck.pdf"
+                href={getAssetUrl("/ppt/cooljet_pitch_deck.pdf")}
                 download="CoolJet_Pitch_Deck.pdf"
                 className="button button-primary deck-download-btn"
                 aria-label="Download official CoolJet pitch deck PDF"
@@ -301,7 +302,7 @@ export function PitchDeckGallery() {
                 <button
                   type="button"
                   className="slide-zoom-btn"
-                  onClick={() => openModal(`/ppt/slide_${selectedSlide}.png`, `Slide ${selectedSlide}: ${FULL_SLIDES[selectedSlide - 1].title}`)}
+                  onClick={() => openModal(getAssetUrl(`/ppt/slide_${selectedSlide}.png`), `Slide ${selectedSlide}: ${FULL_SLIDES[selectedSlide - 1].title}`)}
                 >
                   Full Resolution ↗
                 </button>
@@ -309,18 +310,18 @@ export function PitchDeckGallery() {
 
               <div
                 className="slide-active-frame"
-                onClick={() => openModal(`/ppt/slide_${selectedSlide}.png`, `Slide ${selectedSlide}: ${FULL_SLIDES[selectedSlide - 1].title}`)}
+                onClick={() => openModal(getAssetUrl(`/ppt/slide_${selectedSlide}.png`), `Slide ${selectedSlide}: ${FULL_SLIDES[selectedSlide - 1].title}`)}
                 tabIndex={0}
                 role="button"
                 onKeyDown={(e) => {
                   if (e.key === "Enter" || e.key === " ") {
-                    openModal(`/ppt/slide_${selectedSlide}.png`, `Slide ${selectedSlide}: ${FULL_SLIDES[selectedSlide - 1].title}`);
+                    openModal(getAssetUrl(`/ppt/slide_${selectedSlide}.png`), `Slide ${selectedSlide}: ${FULL_SLIDES[selectedSlide - 1].title}`);
                   }
                 }}
                 aria-label={`Open Slide ${selectedSlide} fullscreen`}
               >
                 <img
-                  src={`/ppt/slide_${selectedSlide}.png`}
+                  src={getAssetUrl(`/ppt/slide_${selectedSlide}.png`)}
                   alt={`CoolJet Pitch Deck Slide ${selectedSlide}: ${FULL_SLIDES[selectedSlide - 1].title}`}
                   className="slide-main-img"
                   loading="lazy"

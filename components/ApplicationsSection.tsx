@@ -1,5 +1,7 @@
 "use client";
 
+import { getAssetUrl } from "../data/assetHelper";
+
 const applications = [
   {
     code: "APP / 01",
@@ -112,7 +114,7 @@ export function ApplicationsSection() {
           <div className="market-deck-body">
             <div className="market-deck-img-wrap">
               <img
-                src="/ppt/market_opportunity_charts.png"
+                src={getAssetUrl("/ppt/market_opportunity_charts.png")}
                 alt="Global AC Market Size $257.8B and India AC Market Size $14.5B from PPT Slide 4"
                 className="market-deck-img"
                 loading="lazy"
