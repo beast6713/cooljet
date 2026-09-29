@@ -14,12 +14,14 @@
 **Sub-Ambient Aerodynamic Expansion Cooling · Validated at TRL 5 · SRM Institute of Science & Technology**
 
 <p align="center">
+  <a href="#-about-cooljet">About The Project</a> •
   <a href="#-project-overview">Overview</a> •
   <a href="#-aerodynamic-first-principles">Core Science</a> •
   <a href="#-engineering-schematics--blueprints">Blueprints & CAD</a> •
   <a href="#-institutional-pitch-deck-slide-gallery">Slide Gallery</a> •
   <a href="#-market-validation--financials">Market & Financials</a> •
-  <a href="#-tech-stack--architecture">Tech Stack</a> •
+  <a href="#-target-applications">Applications</a> •
+  <a href="#-team--institutional-backing">Team & Backing</a> •
   <a href="#-getting-started">Getting Started</a>
 </p>
 
@@ -33,9 +35,29 @@
 
 ---
 
+## ℹ️ About CoolJet
+
+### The Genesis & Mission
+**CoolJet** was conceived at **SRM Institute of Science & Technology** as a bold scientific response to one of the 21st century's most pressing climate paradoxes: **the cooling trap**. As global ambient temperatures rise, humanity relies exponentially on mechanical vapor-compression air conditioning. Yet conventional AC systems consume enormous amounts of grid electricity and leak fluorinated greenhouse refrigerants (HFCs like R410A and R32 with Global Warming Potentials over 2,000× that of $CO_2$).
+
+CoolJet’s core mission is to **decarbonize cooling through pure fluid mechanics** — engineering a solid-state aerodynamic refrigeration system that uses ambient air as its sole working fluid, completely eliminating chemical refrigerants and reducing power consumption by up to 60%.
+
+### The Core Problem with Conventional Air Conditioning
+| Parameter | Conventional Vapor Compression (VCRS) | CoolJet Aerodynamic Architecture |
+| :--- | :--- | :--- |
+| **Working Fluid** | Synthetic Refrigerants (R410A, R32, R134a) | **Pure Ambient Air ($N_2, O_2$)** |
+| **Global Warming Potential (GWP)** | High (GWP > 675 – 2,088) | **Zero (0 GWP / 0 ODP)** |
+| **Primary Power Draw** | Heavy hermetic motor-driven compressor (2.5 – 5.0 kW) | **Aerodynamic low-loss induction blower (0.8 – 1.8 kW)** |
+| **Energy Consumption** | High baseline electric load | **Up to 60% lower power consumption** |
+| **Moving Parts & Maintenance** | Reciprocating/scroll pistons, valves, oil loops | **Single rotor blower + solid-state aerodynamic nozzle matrix** |
+| **Leakage & Fire Liability** | Severe refrigerant leak risk & flammability (A2L) | **Zero chemical leakage liability** |
+| **Cold Climate Limitations** | Condenser freeze & expansion valve jamming | **Continuous aerodynamic operation across -10°C to 55°C** |
+
+---
+
 ## 🌬️ Project Overview
 
-**CoolJet** is a disruptive thermodynamic cooling system engineered to eliminate mechanical vapor-compression refrigeration (VCRS). By replacing heavy, energy-guzzling compressors and potent greenhouse synthetic refrigerants (HFCs/CFCs like R410A, R32) with high-velocity **Convergent-Divergent (C-D) Nozzle Aerodynamics**, CoolJet produces continuous sub-ambient cooling using ambient air as its sole working fluid.
+**CoolJet** is a disruptive thermodynamic cooling system engineered to eliminate mechanical vapor-compression refrigeration (VCRS). By replacing heavy, energy-guzzling compressors and potent greenhouse synthetic refrigerants with high-velocity **Convergent-Divergent (C-D) Nozzle Aerodynamics**, CoolJet produces continuous sub-ambient cooling using ambient air as its sole working fluid.
 
 ### Key Value Propositions
 - **Zero Chemical Refrigerants (0 GWP / 0 ODP)**: Eliminates synthetic refrigerants completely, eliminating leakage liabilities and regulatory phase-out risks.
@@ -47,7 +69,7 @@
 
 ## 🔬 Aerodynamic First Principles
 
-CoolJet leverages fundamental fluid dynamics and gas law expansions:
+CoolJet leverages fundamental fluid dynamics, compressible gas dynamics, and Joule-Thomson expansion:
 
 ```
   +------------------+     +-------------------+     +------------------+     +--------------------+
@@ -110,6 +132,28 @@ Sequence flow documenting ambient intake, blower induction, static temperature p
   <img src="public/ppt/technology_in_action_diagram.png" alt="Technology In Action Diagram" width="90%" />
   <p><em>End-to-end fluid mechanics validation flow sequence from Slide 5.</em></p>
 </div>
+
+---
+
+## 🚘 Target Applications & Impact
+
+CoolJet’s modular, non-chemical architecture addresses critical thermal bottlenecks across high-growth industries:
+
+### 1. Electric Vehicle (EV) Cabin & Battery Conditioning
+- **The Challenge**: In warm climates, running high-voltage vapor-compression AC drains 15% to 22% of an EV's traction battery, severely slashing driving range.
+- **CoolJet Solution**: Ultralight aerodynamic micro-nozzle integration powered by a low-draw 12V/48V brushless blower preserves precious battery kilowatt-hours while eliminating toxic chemical refrigerants from the passenger compartment.
+
+### 2. Hyperscale & Edge Data Centers
+- **The Challenge**: High-density server racks generate extreme heat fluxes. Traditional chiller plants consume billions of gallons of water and enormous power, while direct liquid cooling introduces leak and short-circuit risks.
+- **CoolJet Solution**: Direct rack-level dry aerodynamic air delivery chilling high-TDP processor hot spots without water consumption or chemical hazard.
+
+### 3. Commercial Buildings & Residential HVAC
+- **The Challenge**: High monthly electricity utility costs, complex copper piping installations, and regulatory refrigerant phase-outs (Montreal & Kigali Protocols).
+- **CoolJet Solution**: Duct-integrated modular cooling cassettes with zero GWP, simple plug-and-play installation, and 60% lower operating costs.
+
+### 4. Aerospace & Defense Avionics
+- **The Challenge**: Avionics bays operate under extreme vibrational loads where compressor oil seals and pressurized refrigerant tubes fail frequently.
+- **CoolJet Solution**: Solid-state aerodynamic nozzles with zero hermetic seals, zero oil, and high resilience under extreme vibration and g-forces.
 
 ---
 
@@ -241,6 +285,21 @@ Complete official pitch deck presented for incubation and institutional support 
 </div>
 
 </details>
+
+---
+
+## 👥 Team & Institutional Backing
+
+### Core Multidisciplinary Competencies
+- **Lead Aerodynamicist & Founder**: Rudra Shekhar Dubey — *Gas Dynamics, C-D Nozzle Design & Project Leadership (SRM IST)*
+- **Thermal Systems Engineering**: *Thermodynamic Cycle Modeling, Atmospheric Energy Balances, & Heat Transfer*
+- **Mechanical Prototyping & Packaging**: *Chassis Architecture, Rotor Dynamics, Dynamic Balancing, & Acoustic Attenuation*
+- **Industry & Certification Advisory**: *HVAC Regulatory Compliance, Scale-up Strategy (TRL 5 -> TRL 7), & OEM Partnerships*
+
+### Academic & Incubation Institution
+- **Incubator**: SRM Innovation and Incubation Center / NewGen IEDC, **SRM Institute of Science & Technology**
+- **Grant Support**: Approved Milestone Allocation of ₹3,00,000 under the Innovation & Incubation Program (IVP)
+- **Current Maturity**: **TRL 5** (Component and brassboard validated in relevant operating environment)
 
 ---
 
