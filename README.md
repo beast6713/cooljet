@@ -3,6 +3,7 @@
 <div align="center">
 
 [![Next.js 16](https://img.shields.io/badge/Next.js-16.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![Live Demo](https://img.shields.io/badge/Live%20Website-beast6713.github.io%2Fcooljet-2ea44f?style=for-the-badge&logo=google-chrome)](https://beast6713.github.io/cooljet/)
 [![React 19](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![TRL Status](https://img.shields.io/badge/TRL-Level%205-00c853?style=for-the-badge)](https://github.com/beast6713/cooljet)
@@ -14,6 +15,7 @@
 **Sub-Ambient Aerodynamic Expansion Cooling · Validated at TRL 5 · SRM Institute of Science & Technology**
 
 <p align="center">
+  <a href="https://beast6713.github.io/cooljet/"><strong>🌐 Visit Live Website</strong></a> •
   <a href="#-about-cooljet">About The Project</a> •
   <a href="#-project-overview">Overview</a> •
   <a href="#-aerodynamic-first-principles">Core Science</a> •
