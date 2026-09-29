@@ -22,6 +22,7 @@
   <a href="#-market-validation--financials">Market & Financials</a> •
   <a href="#-target-applications">Applications</a> •
   <a href="#-team--institutional-backing">Team & Backing</a> •
+  <a href="#-contributors">Contributors</a> •
   <a href="#-getting-started">Getting Started</a>
 </p>
 
@@ -387,6 +388,17 @@ npm run dev
 ```
 
 Visit **`http://localhost:3000`** in your browser to experience the platform.
+
+## 🤝 Contributors
+
+A huge thanks to the developers and engineering contributors building and maintaining the CoolJet platform:
+
+<div align="center">
+
+| [<img src="https://avatars.githubusercontent.com/u/210094144?v=4" width="100px;" alt="beast6713"/><br /><sub><b>beast6713</b></sub>](https://github.com/beast6713)<br />🚀 Owner / Lead Developer | [<img src="https://avatars.githubusercontent.com/u/179996973?v=4" width="100px;" alt="nilesh-afk"/><br /><sub><b>Nilesh Pandey (nilesh-afk)</b></sub>](https://github.com/nilesh-afk)<br />🛠️ Contributor |
+| :---: | :---: |
+
+</div>
 
 ---
 
